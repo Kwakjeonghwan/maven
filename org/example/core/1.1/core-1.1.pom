@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>core</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -45,9 +45,9 @@
                     <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
                     <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-                    <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+                    <branch>refs/heads/core02</branch>                       <!-- github remote branch name -->
                     <includes><include>**/*</include></includes>
-                    <repositoryName>core</repositoryName>      <!-- github repo name -->
+                    <repositoryName>maven</repositoryName>              <!-- github repository name -->
                     <repositoryOwner>Kwakjeonghwan</repositoryOwner>    <!-- github username  -->
                 </configuration>
                 <executions>
